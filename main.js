@@ -14,6 +14,9 @@ function createWindow() {
         }
     })
 
+    // Set the icon
+    win.setIcon('./Rooster.ico')
+
     // Hide the menu bar
     win.setMenuBarVisibility(false);
 
