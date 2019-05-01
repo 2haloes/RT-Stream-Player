@@ -14,8 +14,10 @@ function createWindow() {
         }
     })
 
-    // Set the icon
-    win.setIcon('./Rooster.ico')
+    // Set the icon app.getAppPath() ensures that the icon is found from within the resouces (similar to the win.loadfile below) to prevent issues
+        win.setIcon(app.getAppPath() + '/Rooster.ico')
+        
+    
 
     // Hide the menu bar
     win.setMenuBarVisibility(false);
